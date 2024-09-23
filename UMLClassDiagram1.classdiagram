@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2ba4e142-f2b0-4e08-aecf-be70bc158ab7" name="UMLClassDiagram1" linkedPackageId="6a838425-042b-4390-aff0-e198919d152b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f1bda3c8-b531-4f3b-b031-df1323ae4218" name="التحاليل" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="792c12b3-d318-42fa-92e7-903d8551b8f6" />
+        <targetEnds>
+          <association Id="c3e11618-dbb6-4234-a69b-7b91efc05f4f" isDerived="false" sourceEndRoleName="التحاليل" targetEndRoleName="التحاليل الخاصه بالمريض" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8a2c8aa-b34b-4c9b-9b34-a72c7c6ea075" LastKnownName="التحاليل الخاصه بالمريض" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f77d97b-c028-4162-a9a8-ee7dfa635353" name="التحاليل" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2b276237-3413-4708-9720-c633119a7c4d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6bf2630-a291-479a-a913-f8d2d81daca5" name="التحاليل الخاصه بالمريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="502191a8-0739-4c09-924f-f51a0c745ed1" name="Lower" value="0">
+                      <elementDefinition Id="3fcbae9e-c1d6-4486-a26d-b00cd804712d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9fe2c605-1fc7-4b98-b148-4ce39d06bffc" name="Upper" value="1">
+                      <elementDefinition Id="6a8d2a59-6c49-405b-879d-0d847cd5c500" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cc20dc86-1434-463a-ad25-bab691c4b246" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0f315e63-9bbb-405c-99b8-62b39667ac12" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9aae19f1-db84-4005-9a84-a8d5def9b834" name="كود التحاليل" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="49125eee-8967-4343-8a25-c716937b18de" />
+          </property>
+          <property Id="320c9bdd-4e1d-4932-a8a6-6dfb8d72c38e" name="اسم التحليل" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dfc612ba-1683-431e-a431-26837563fe22" />
+          </property>
+          <property Id="cf41264b-8dde-42c8-97a6-3086629bc871" name="توصيف" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9de544af-d622-4573-b732-828217f782a6" />
+          </property>
+          <property Id="b9984b7d-8e71-4a94-920b-2b53953f47c8" name="متطلبات" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77fa9b3f-0c00-49fa-91a9-2e1ca1036153" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="400f3bc4-ca02-49f1-b657-aac78bca9bc5" name="المريض" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac0277a8-d206-4c61-b051-e8dbecd3a45c" />
+        <targetEnds>
+          <association Id="b55ed59a-5b4c-429b-a508-4aa76d32b45e" isDerived="false" sourceEndRoleName="المريض" targetEndRoleName="التحاليل الخاصه بالمريض" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8a2c8aa-b34b-4c9b-9b34-a72c7c6ea075" LastKnownName="التحاليل الخاصه بالمريض" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0590471c-c4a3-43a3-8fbd-fd8e27fbf279" name="المريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d09357fc-1778-4be3-89b1-34365e221c36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="496c6304-937d-4b94-b656-cac450de289c" name="التحاليل الخاصه بالمريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c79ef114-9faf-4435-9337-75cf88f8bc5c" name="Lower" value="0">
+                      <elementDefinition Id="6f92f896-8ef6-4d90-a385-971475580107" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d1260c94-e5c9-462a-9aed-25bbbd9e228b" name="Upper" value="1">
+                      <elementDefinition Id="28d37eb5-c09b-4e09-a088-8b7249407973" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="13a8ced2-7259-46d8-b069-bcf3e4bee197" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fa12ef12-377a-4c6f-99c1-b1ddcee00afa" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="16107c06-bcd8-4176-b14a-6a621905eb82" name="كود المريض" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5c3e462-20da-4382-ade0-91cf90e0130e" />
+          </property>
+          <property Id="d052ad57-ecd8-42af-8fa1-615dd82a27a8" name="اسم المريض" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="27920e29-b001-4acf-a9a1-8a1370dce133" />
+          </property>
+          <property Id="240933e9-9895-47b6-b222-77489b7a69c4" name="رقم التليفون" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fcd9f0ae-37ba-47ca-91aa-00e4ea6a3f57" />
+          </property>
+          <property Id="a096ee2b-9b64-4635-a7c3-614c1632c6b9" name="السن" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a91955b9-26f5-4c1d-adfd-fd1c0487549d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8a2c8aa-b34b-4c9b-9b34-a72c7c6ea075" name="التحاليل الخاصه بالمريض" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e13a2e1-5734-48e4-aa6c-ac67a2e2e10f" />
+        <targetEnds>
+          <association Id="dd8316cc-119e-40b1-889c-765d29306c14" isDerived="false" sourceEndRoleName="التحاليل الخاصه بالمريض" targetEndRoleName="الدفع" isLeaf="false" isAbstract="false">
+            <classMoniker Id="de0e3d5a-d216-495c-8249-eb1fe129f905" LastKnownName="الدفع" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d251a22-fe24-4632-8caa-3bbc0aebcba0" name="التحاليل الخاصه بالمريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="faf5d4ec-2a71-4729-88ec-8e086b2f515b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dee962c0-beb7-4419-aff0-70ffcb2fd04a" name="الدفع" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4337e020-2c1e-4cdf-bc44-93a3c0331f88" name="Lower" value="0">
+                      <elementDefinition Id="ab07b268-751a-4dc6-9013-f50d4981e6ab" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3a006627-f725-42a7-8904-cba258b986f2" name="Upper" value="1">
+                      <elementDefinition Id="03779532-f1e4-4ec2-a639-3e15d6c749a2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="11f9f592-2ec7-4da9-887a-84f5cca40714" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a1a9cf48-e04a-4f06-9b89-d77a2150bcf6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="eb54db65-2cde-4dd2-ba69-d6b7da3c3a66" name="كود الحجز" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a8f149f6-1dff-495c-8819-873b239e6d8e" />
+          </property>
+          <property Id="36f9cd44-590d-4cf7-9dbc-5ca83e5fcf06" name="كود المريض" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4027de24-023e-4efc-9b5b-47bf18959972" />
+          </property>
+          <property Id="fd5bd8f7-a385-4b22-9bcf-c384f3855a1d" name="كود التحليل" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd3b842b-4f7c-4f6a-b250-f82d8bad26c8" />
+          </property>
+          <property Id="6e284056-d309-4eb5-bd08-9c661f4d8fa3" name="التاريخ" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3657e794-b6ee-47c3-a312-12e303641b44" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de0e3d5a-d216-495c-8249-eb1fe129f905" name="الدفع" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c690c850-25c1-4bdd-bbdf-491970bc1b44" />
+        <ownedAttributesInternal>
+          <property Id="7b5ef458-a77c-4bed-8b0e-e82a79a382e5" name="كود الدفع" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b62e8f87-a118-45e5-bd55-9b85b2eca7cf" />
+          </property>
+          <property Id="6e3c0965-1e5f-4190-a56f-93d6fc3abad3" name="كود الحجز" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b9dff863-2844-4ca8-bfb5-416ac642bf45" />
+          </property>
+          <property Id="b30b1a3a-e449-45b1-ab3e-160d14083a4d" name="كود القيمة" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5431664-6ccb-484d-b15f-56ae100923f3" />
+          </property>
+          <property Id="7c097174-0588-40e8-be6b-2652f2cac4b2" name="طريقة الدفع" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="127e9053-dbf4-40b7-b997-d3a7664c169e" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6a838425-042b-4390-aff0-e198919d152b" name="ModelingProject1">
+    <elementDefinition Id="a1f9d2c7-4c14-426c-893e-f0e87a38d998" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ca9105e6-ee4f-4d7e-928a-ec69055c812b">
+        <profileInstance Id="ee278840-ff25-46ca-82de-10cae979f39f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="68a287fe-99c6-4b02-8c49-8c69104a8d92">
+        <profileInstance Id="1f119954-074d-407e-a0c3-4a7982f2e3e7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

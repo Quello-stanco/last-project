@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="014f1440-6c91-49b0-acdb-e1a8fb651972" name="UMLUseCaseDiagram1" linkedPackageId="343f1c53-2cbb-4abe-9cba-9e313329cee3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="74cb0e13-b271-42ab-9be0-1bd167916b0f">
+      <profileInstance Id="968ac275-f339-4b24-909b-39317983f0f4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1644f299-ae0b-4031-9647-fbb2e87a9c4c">
+      <profileInstance Id="87628d4f-d192-4199-9e4e-b01381587bdc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c8f77867-00da-4b2e-9689-c562d47ec843" name="موظف الاستقبال" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a4e4496-feae-4f80-9f27-c954a627b410" />
+        <targetEnds>
+          <association Id="0b308372-2666-49c0-8663-9756bb9ad8b5" isDerived="false" sourceEndRoleName="المريض " targetEndRoleName="تسجيل الدخول " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="abebc508-7f77-4c78-8854-7d918a354122" LastKnownName="تحديد التحاليل المتاحة " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5570f656-f2f5-493f-b497-90bd11e11dd9" name="المريض " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fac03ed2-1802-4fc5-a052-27e1349cc14e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ffc133d5-f65b-443d-bd7b-0ebc176803aa" name="تسجيل الدخول " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e490b8d-3c3d-4932-9876-21684a5d4762" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b67add0f-d3ae-4383-b7da-0cf4e029c2d3" />
+          </association>
+          <association Id="99174665-c4c0-42c5-a478-25274298d525" isDerived="false" sourceEndRoleName="الممرض " targetEndRoleName="بيانات المريض" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5110e48e-183f-4ffc-872a-f0b3ef6523d5" LastKnownName="تسجيل بيانات المريض" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39b923c7-b2c2-4b18-852e-f0a982f5b7ce" name="الممرض " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d1e03d60-3af3-4da4-8116-661fb16da30e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f09ae27-a1b5-4233-b8d5-0d3298bdd523" name="بيانات المريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="476f83ce-fccb-4259-ad19-1e82842f6f5e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cf6e1964-0ff9-42c4-8feb-bd193cc24398" />
+          </association>
+          <association Id="d5ba2f5e-c399-486b-a914-5c246ad4cffd" isDerived="false" sourceEndRoleName="موظف الاستقبال" targetEndRoleName="التحليل الخاصه بالمريض" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="37e41721-2bfc-42c7-b6bc-9d281216dc62" LastKnownName="التحليل الخاصه بالمريض" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="135875e1-1c49-4a36-bd44-c3184adf7f11" name="موظف الاستقبال" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d657e85d-79fd-46f4-8104-d56fb0c2aa32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc8627b9-b715-4757-890e-d64b7fc2a2fb" name="التحليل الخاصه بالمريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="032b561c-e01c-479a-8c78-6bac14e29c63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="88379587-afff-4110-9993-9d9a4a27a96d" />
+          </association>
+          <association Id="c55a07f4-af4e-45c1-bda5-ffdc68b2b2d6" isDerived="false" sourceEndRoleName="موظف الاستقبال" targetEndRoleName="عمليه الدفع" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5751c0d1-6666-4c8e-8f45-accb19b72cb8" LastKnownName="عمليه الدفع" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6de428cb-46c0-4631-be2a-1b35cb63c855" name="موظف الاستقبال" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71f395b2-0b24-48e0-bad4-942eaae9298b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3706d53-3c47-4af6-a928-b20ea09e1226" name="عمليه الدفع" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="41c3a24e-1fe3-45c5-8303-4894282310f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0014a5f8-2405-48b6-8f09-fd91955dd633" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="abebc508-7f77-4c78-8854-7d918a354122" name="تحديد التحاليل المتاحة " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="98007dc7-b623-4ae7-82d1-437c58c9097b" />
+        <subjects>
+          <subsystemMoniker Id="ac638b11-0289-42ab-9b21-f9376a1d36f1" LastKnownName="معمل تحاليل  " />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5110e48e-183f-4ffc-872a-f0b3ef6523d5" name="تسجيل بيانات المريض" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94090bfe-dda5-4b11-9c55-0d63b0d02b54" />
+        <subjects>
+          <subsystemMoniker Id="ac638b11-0289-42ab-9b21-f9376a1d36f1" LastKnownName="معمل تحاليل  " />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ac638b11-0289-42ab-9b21-f9376a1d36f1" name="معمل تحاليل  " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b22b9e66-616b-441e-9176-8549fdac42a0" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="37e41721-2bfc-42c7-b6bc-9d281216dc62" name="التحليل الخاصه بالمريض" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b7c5a3d0-5e7d-4202-98a7-581439470f2a" />
+        <subjects>
+          <subsystemMoniker Id="ac638b11-0289-42ab-9b21-f9376a1d36f1" LastKnownName="معمل تحاليل  " />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5751c0d1-6666-4c8e-8f45-accb19b72cb8" name="عمليه الدفع" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b951eae3-ca7d-4174-a6f8-1497f0cbc93d" />
+        <subjects>
+          <subsystemMoniker Id="ac638b11-0289-42ab-9b21-f9376a1d36f1" LastKnownName="معمل تحاليل  " />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="98ece791-ee01-4a2b-afc0-206e1bf2a8b3" name="المريض" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c25fbec-f352-4ec1-9add-4cc3865d58dc" />
+        <targetEnds>
+          <association Id="220b9325-cb81-4e0f-bd56-e33a715e0a18" isDerived="false" sourceEndRoleName="المريض" targetEndRoleName="تسجيل بيانات المريض" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5110e48e-183f-4ffc-872a-f0b3ef6523d5" LastKnownName="تسجيل بيانات المريض" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5587dbf8-d282-465a-8fbc-39f193ebe1d9" name="المريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8ad5f6a8-47cc-436e-b53e-25212afbb97b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92e85d7a-bd9a-4894-a713-75b0eaaa065e" name="تسجيل بيانات المريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31064328-72a7-4cc6-8a87-641d9c842697" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ef945d8-e8f4-43bc-a69a-df7c83fe0eff" />
+          </association>
+          <association Id="93d719e2-9ff8-4f2b-929d-5109af28e2b7" isDerived="false" sourceEndRoleName="المريض" targetEndRoleName="التحليل الخاصه بالمريض" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="37e41721-2bfc-42c7-b6bc-9d281216dc62" LastKnownName="التحليل الخاصه بالمريض" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc1917eb-3cfe-4e1b-a826-870e403eea86" name="المريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c22fac0a-ccf3-4b2a-8dce-1fdaa5ac8e84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="092893c9-a2b1-48fb-bfa8-0321788e1677" name="التحليل الخاصه بالمريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e83735ed-1318-4866-b25d-d15f2143475b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="495c73c0-ad90-4778-a8ab-831d92f717e6" />
+          </association>
+          <association Id="4f4811f3-d52c-4b9b-aadf-c2f78c4888bf" isDerived="false" sourceEndRoleName="المريض" targetEndRoleName="عمليه الدفع" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5751c0d1-6666-4c8e-8f45-accb19b72cb8" LastKnownName="عمليه الدفع" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ead95ab-b171-4404-9996-c6bad83d02d5" name="المريض" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e23b8a7-4cfa-4268-90c2-66c27e90d4a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c53396e-c6e0-480c-8101-79008eed9573" name="عمليه الدفع" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6a811bf7-4381-4340-b454-96c63582ea1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67bf2714-fcfd-419c-8c4e-2c2b898a6b13" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="343f1c53-2cbb-4abe-9cba-9e313329cee3" name="ModelingProject1">
+    <elementDefinition Id="a1f9d2c7-4c14-426c-893e-f0e87a38d998" />
+  </package>
+</useCaseModelRoot>
