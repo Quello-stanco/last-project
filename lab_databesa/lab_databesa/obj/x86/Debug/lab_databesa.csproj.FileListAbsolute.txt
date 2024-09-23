@@ -19,3 +19,14 @@ C:\Users\Abdo\Desktop\lab_databesa\lab_databesa\bin\Debug\Database1.mdf
 C:\Users\Abdo\Desktop\lab_databesa\lab_databesa\bin\Debug\Database1_log.ldf
 C:\Users\Abdo\Desktop\lab_databesa\lab_databesa\bin\Debug\lab_databesa.exe
 C:\Users\Abdo\Desktop\lab_databesa\lab_databesa\bin\Debug\lab_databesa.pdb
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.exe
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.pdb
+D:\Project\last-project-main\lab_databesa\lab_databesa\bin\Debug\Database1.mdf
+D:\Project\last-project-main\lab_databesa\lab_databesa\bin\Debug\Database1_log.ldf
+D:\Project\last-project-main\lab_databesa\lab_databesa\bin\Debug\lab_databesa.exe
+D:\Project\last-project-main\lab_databesa\lab_databesa\bin\Debug\lab_databesa.pdb
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.csprojResolveAssemblyReference.cache
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.frmPatient.resources
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.frmanalysis.resources
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.Properties.Resources.resources
+D:\Project\last-project-main\lab_databesa\lab_databesa\obj\x86\Debug\lab_databesa.csproj.GenerateResource.Cache

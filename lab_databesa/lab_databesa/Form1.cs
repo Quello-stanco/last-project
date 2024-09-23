@@ -79,17 +79,58 @@ namespace lab_databesa
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string s = wrk.RunDML("UPDATE patient SET patients_name = N'" + txtpatientname.Text + "', age = " + txtpatientage.Text + ", number_phone = N'" + txtCustomerPhone.Text + "' WHERE patient_code = " + txtpatientcode.Text);
-            if (s == "ok")
+            try
             {
-                MessageBox.Show("تم التعديل بنجاح");
-                dataGridView1.DataSource = wrk.runQuery("SELECT * FROM patient");
+                // التأكد من أن جميع الحقول ممتلئة
+                if (string.IsNullOrWhiteSpace(txtpatientname.Text) ||
+                    string.IsNullOrWhiteSpace(txtpatientage.Text) ||
+                    string.IsNullOrWhiteSpace(txtCustomerPhone.Text) ||
+                    string.IsNullOrWhiteSpace(txtpatientcode.Text))
+                {
+                    MessageBox.Show("يرجى ملء جميع الحقول.");
+                    return;
+                }
+
+                // التحقق من أن العمر ورمز المريض أرقام صحيحة
+                int age;
+                if (!int.TryParse(txtpatientage.Text, out age))
+                {
+                    MessageBox.Show("يرجى إدخال العمر بشكل صحيح.");
+                    return;
+                }
+
+                int patientCode;
+                if (!int.TryParse(txtpatientcode.Text, out patientCode))
+                {
+                    MessageBox.Show("يرجى إدخال رمز المريض بشكل صحيح.");
+                    return;
+                }
+
+                // جملة التحديث بدون استخدام SqlParameter
+                string query = "UPDATE patient SET patients_name = N'" + txtpatientname.Text + "', age = " + age + ", number_phone = N'" + txtCustomerPhone.Text + "' WHERE patient_code = " + patientCode;
+
+                // تنفيذ جملة SQL باستخدام الدالة RunDML
+                string result = wrk.RunDML(query);
+
+                // التحقق من نتيجة التحديث
+                if (result == "ok")
+                {
+                    MessageBox.Show("تم التعديل بنجاح.");
+                    // تحديث DataGridView بعد التعديل
+                    dataGridView1.DataSource = wrk.runQuery("SELECT * FROM patient");
+                }
+                else
+                {
+                    MessageBox.Show("حدث خطأ أثناء التعديل: " + result);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show(s);
+                MessageBox.Show("حدث استثناء: " + ex.Message);
             }
         }
+
+
 
         private void button2_Click_1(object sender, EventArgs e)
         {

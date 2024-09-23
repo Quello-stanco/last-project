@@ -14,7 +14,7 @@ namespace lab_databesa
             public DataTable tb = new DataTable();
             public WorkTable1()
 {
-    conn.ConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Abdo\Desktop\lab_databesa\lab_databesa\Database1.mdf;Integrated Security=True;User Instance=True"; 
+    conn.ConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Project\last-project-main\lab_databesa\lab_databesa\Database1.mdf;Integrated Security=True;User Instance=True"; 
  
 }
             public string RunDML(string s)

@@ -77,6 +77,37 @@ namespace lab_databesa
             }
         }
 
+        private void button3_Click_1(object sender, EventArgs e) // زر التعديل الجديد
+        {
+            // تحقق من أن جميع الحقول ممتلئة
+            if (string.IsNullOrWhiteSpace(txtanalysiscode.Text) ||
+                string.IsNullOrWhiteSpace(txtanalysisname.Text) ||
+                string.IsNullOrWhiteSpace(richtxtdiscription.Text) ||
+                string.IsNullOrWhiteSpace(richtxtrequirements.Text))
+            {
+                MessageBox.Show("يرجى ملء جميع الحقول.");
+                return;
+            }
+
+            // جملة التعديل باستخدام جمل SQL
+            string s = wrk.RunDML("UPDATE patient_analysis SET analysis_name = N'" + txtanalysisname.Text + "', " +
+                                  "description = N'" + richtxtdiscription.Text + "', " +
+                                  "requirements = N'" + richtxtrequirements.Text + "' " +
+                                  "WHERE analysis_code = '" + txtanalysiscode.Text + "'");
+
+            // التحقق من نتيجة التنفيذ
+            if (s == "ok")
+            {
+                MessageBox.Show("تم التعديل بنجاح");
+                // تحديث DataGridView بعد التعديل
+                dataGridView1.DataSource = wrk.runQuery("SELECT * FROM patient_analysis");
+            }
+            else
+            {
+                MessageBox.Show("حدث خطأ أثناء التعديل: " + s);
+            }
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // تحميل البيانات المحددة في DataGridView
