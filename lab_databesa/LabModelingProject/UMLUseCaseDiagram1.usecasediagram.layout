@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+  <useCaseModelRootMoniker Id="cc7ef929-8277-4bc9-b12b-7ee5f7cf309e" />
+  <nestedChildShapes>
+    <actorShape Id="c1801d2c-3ae8-4000-9015-8e2eeaeed1e6" absoluteBounds="2, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="c7b0d40e-80b9-4174-abf1-62dfd59ac1a4" LastKnownName="موظف الاستقبال" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="e3728bd6-9e71-496b-9bed-177345f58b0f" absoluteBounds="6.5, 2.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="3640a5c5-f4e9-44f8-bf23-49ba015b3cf7" LastKnownName="المريض" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="0c9ba287-969d-4a64-bfbd-6339fae4df92" absoluteBounds="3.625, 0.75, 1.75, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c36934c7-fcdc-427f-964f-e332d47cfbce" LastKnownName="تحديد التحاليل المتاحة" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.5 : 2.34027777777778); (4.07304999302431 : 1.3352736155678)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="32ab80ea-24b3-4cfa-b7b6-44efac3fdbfb" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c1801d2c-3ae8-4000-9015-8e2eeaeed1e6" />
+        <useCaseShapeMoniker Id="0c9ba287-969d-4a64-bfbd-6339fae4df92" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ca11ab15-3c27-464f-a756-4aa2c0f8b340" absoluteBounds="3.625, 1.75, 1.75, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="18e157a7-a4b5-430c-a0ba-99fca4ac669f" LastKnownName="تسجيل بيانات المريض" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.5 : 2.45138888888889); (3.73151528619195 : 2.21192758324045)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b290a1ab-1b88-4e44-8683-889980070a05" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c1801d2c-3ae8-4000-9015-8e2eeaeed1e6" />
+        <useCaseShapeMoniker Id="ca11ab15-3c27-464f-a756-4aa2c0f8b340" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(6.5 : 2.45138888888889); (5.26848471380805 : 2.21192758324045)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="6b4e0d05-c1f5-490d-a263-fc2e1b158edd" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="e3728bd6-9e71-496b-9bed-177345f58b0f" />
+        <useCaseShapeMoniker Id="ca11ab15-3c27-464f-a756-4aa2c0f8b340" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="628270c6-e464-44d8-9673-1a90759a2b95" absoluteBounds="3.625, 2.75, 1.75, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="398650d4-4bdc-4bbc-b41c-c907304b27c9" LastKnownName="التحاليل الخاصة بالمريض" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.5 : 2.5625); (3.78317206954584 : 2.88329301738646)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="2180f691-fa66-4653-a301-1ffc61d0d4ab" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c1801d2c-3ae8-4000-9015-8e2eeaeed1e6" />
+        <useCaseShapeMoniker Id="628270c6-e464-44d8-9673-1a90759a2b95" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(6.5 : 2.5625); (5.21682793045416 : 2.88329301738646)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3c92bd3a-d400-4108-b267-d6ec0fdb94e2" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="e3728bd6-9e71-496b-9bed-177345f58b0f" />
+        <useCaseShapeMoniker Id="628270c6-e464-44d8-9673-1a90759a2b95" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="58cf6fea-8e33-4db7-a331-e49f7915b496" absoluteBounds="3.625, 3.75, 1.75, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b269ccb3-930c-4cfb-adbf-cee6cd07830f" LastKnownName="عملية الدفع" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2.5 : 2.66666666666667); (4.15532061374323 : 3.77021374249549)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a00fca62-3bf8-452a-b372-3d3d07d3a16b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="c1801d2c-3ae8-4000-9015-8e2eeaeed1e6" />
+        <useCaseShapeMoniker Id="58cf6fea-8e33-4db7-a331-e49f7915b496" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(6.5 : 2.66666666666667); (4.84467938625677 : 3.77021374249549)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7601277f-27e7-4efa-91cd-4c5b585a22b3" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="e3728bd6-9e71-496b-9bed-177345f58b0f" />
+        <useCaseShapeMoniker Id="58cf6fea-8e33-4db7-a331-e49f7915b496" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <SubsystemShape Id="19fc9b45-a834-4db9-b2c1-6dd59160ea9f" absoluteBounds="1.75, 0.625, 5.375, 3.75" customColor="Transparent">
+      <subsystemMoniker Id="031c2826-d8a6-4fc0-a53a-fb8914d176f7" LastKnownName="معمل تحاليل طبية" />
+    </SubsystemShape>
+  </nestedChildShapes>
+</useCaseDiagram>
